@@ -1,0 +1,67 @@
+docker image Commands Overview
+Docker images are the blueprints for containers. Here are common docker image commands:
+
+1. List All Docker Images
+bash
+Copy code
+docker images
+Displays all images available on your system.
+2. Pull an Image from Docker Hub
+bash
+Copy code
+docker pull <image-name>:<tag>
+Example:
+bash
+Copy code
+docker pull nginx:latest
+3. Build an Image from a Dockerfile
+bash
+Copy code
+docker build -t <image-name>:<tag> <path>
+Example:
+bash
+Copy code
+docker build -t myapp:1.0 .
+4. Remove an Image
+bash
+Copy code
+docker rmi <image-id or image-name>
+Example:
+bash
+Copy code
+docker rmi nginx:latest
+5. Inspect an Image
+bash
+Copy code
+docker inspect <image-id or image-name>
+Provides detailed information about the image.
+6. Tag an Image
+bash
+Copy code
+docker tag <existing-image> <new-repo>:<new-tag>
+Example:
+bash
+Copy code
+docker tag myapp:1.0 myrepo/myapp:1.0
+7. Push an Image to a Registry
+bash
+Copy code
+docker push <image-name>:<tag>
+Example:
+bash
+Copy code
+docker push myrepo/myapp:1.0
+8. Prune Unused Images
+bash
+Copy code
+docker image prune
+Removes unused Docker images to free up space.
+Let me know if you need more information on any specific command! 😊
+
+
+
+
+
+
+
+
